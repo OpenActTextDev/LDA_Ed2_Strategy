@@ -10,22 +10,23 @@ github-repo: https://github.com/OpenActTextDev/LDA_Ed2_Strategy/
 
 ---
 
-# Loss Data Analytics - Edition Two {-}
+# {-}
 
 <p style="text-align:right;">
 *Date: `r format(Sys.Date(), "%d %B %Y")`*</p>
 
 
 
-The first edition of [Loss Data Analytics](https://openacttexts.github.io/) was completed in August 2018; some might say that the development was organic. We managed to get 19 authors from 8 countries in more or less in the same direction; the product is a free online book that was written in "R" and is hosted on Github. 
+The first edition of [Loss Data Analytics](https://openacttexts.github.io/) was completed in August 2018; some might say that the development was organic. We managed to get 19 authors from 8 countries in more or less in the same direction; the product is a free online book that was written in **R** and is hosted on Github. 
 
 In revising the book for the second edition, we now have the advantage of seeing the book in its entirety. We can use this base to promote cooperation and consistency among chapters. We did well with consistency of notation in the first edition but can now think strategically about how to develop topics within the book and how to make them accessible for different readerships.
 
-A working group (dubbed the [Steering Committee](CSteer.html)) has developed this set of [principles to guide authors and editors](CGuide.html) in developing a new and better version of Loss Data Analytics. These principles apply to all chapters and appendices.
+A working group (dubbed the [Steering Committee](CSteer.html)) has developed this set of [principles to guide authors and editors](CGuide.html) in developing a new and better version of *Loss Data Analytics*. These principles apply to all chapters and appendices.
 
 
-The groups entire report is available using this download button: <a href="https://github.com/OpenActTextDev/LDA_Ed2_Strategy/raw/main/GuidingPinciples_05July2022.docx" download>
-<button type="button"  style="background-color:#008CBA;color:white">Download the Loss Data Analytics Principles</button></a>. In this report, we provide chapter by chapter advice to improve each chapter.
+The group's entire report is available using this download button: <a href="https://github.com/OpenActTextDev/LDA_Ed2_Strategy/raw/main/GuidingPinciples_05July2022.docx" download>
+<button type="button"  style="background-color:#008CBA;color:white">Download the Loss Data Analytics Revision Principles</button></a>. This report provides not only general principles but also **chapter by chapter** advice for improving *Loss Data Analytics.*
+
 
 # Steering Committee Members {-#CSteer}
 
@@ -35,13 +36,14 @@ The project goal is to have the actuarial community author our learning resource
 
 - **Zeinab Amin** is a Professor at the Department of Mathematics and Actuarial Science and Associate Provost for Assessment and Accreditation at the American University in Cairo (AUC).
 
+<br><br><br>
 
 <img src = "ContributorPics\MiukiEbisaki.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" />
 
 
 -  **Miyuki Ebisaki** is a Manager at Deloitte Touche Tohmatsu LLC in Japan. 
 
-<br>
+<br><br><br><br><br>
 
 
 
@@ -49,11 +51,17 @@ The project goal is to have the actuarial community author our learning resource
 
 - **Edward (Jed) Frees** is an emeritus professor, formerly the Hickman-Larson Chair of Actuarial Science at the University of Wisconsin-Madison and currently affiliated with Australian National University.
 
+<br><br><br>
+
 <img src = "ContributorPics\BrianHartmanPortrait.jpg" width = "150" height = "200" style = "float:right; margin-left: 10px; margin-top: 7px" />
 
 -  **Brian Hartman** is an associate professor of statistics and actuarial program coordinator at Brigham Young University. 
 
+<br><br><br><br>
+
 -  **Tim Higgins** is an associate professor of actuarial studies and deputy director of the school of finance, actuarial studies and statistics at the Australian National University (ANU). 
+
+<br><br><br>
 
 <img src = "ContributorPics\Noriszura.jpg" width = "150" height = "150" style = "float:right; margin-left: 10px; margin-top: 7px" />
 

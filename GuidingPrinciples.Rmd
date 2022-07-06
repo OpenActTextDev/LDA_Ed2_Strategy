@@ -3,10 +3,9 @@
 
 
 
-## I. Types of Readers   {-}
+## I. Identifying the Readership   {-}
 
-We want to think beyond a traditional textbook where each concept is tightly integrated with prior portions of the book. Rather, think of this as a combination between this type of traditional textbook and a "wikipedia" type resource, where readers come in for selected sections. 
-With this as background, think about developing the book for the following different types of readers:
+We want to think beyond a traditional textbook where each concept is tightly integrated with prior portions of the book. Rather, think of this as a combination between this type of traditional textbook and a "wikipedia" type resource, where readers come in for selected sections. With this as background, think about developing the book for the following different types of readers:
 
 *  A. *Beginning Students*. People with a year of calculus and one term of probability. No prior knowledge of mathematical statistics (but this course is a co-requisite), no knowledge of insurance/risk management. This book is their very first look at actuarial science. 
 *  B. *Intermediate Students*. People with a background in calculus, probability, mathematical statistics (and possibly regression). At least one course in insurance/risk management. 
@@ -14,7 +13,7 @@ With this as background, think about developing the book for the following diffe
 
 The intent is that the book will be suitable for all types of readers. The main body of the text is targeted towards something in between types (A) and (B), with appendices to fill in the gaps. With appropriate signposting, the book will also be helpful for those that are closer to type (C).
 
-## II. Goals {-}
+## II. Reader Goals {-}
 
 When a reader uses the book, the goal is not to teach them skills to pass a given actuarial exam. Hopefully, by learning this material, it provides students with the knowledge necessary to do so eventually. In the same way, we do not wish to get into all the nuances needed to immediately use the techniques in practice.
 
@@ -46,7 +45,7 @@ We want to focus on the foundations and so short mathematical demonstrations of 
 
 Because we are thinking of different types of readers, "signposting," or clearly labeling content, is important. In particular, we can expect some readers to have strong technical background in probability and statistics and wish to use the book for actuarial or insurance content. To achieve this goal, we want to clearly label sections or subsections as "actuarial" in nature.
 
-## VIII. Connections {-}
+## VIII. Content Connections {-}
 
 Now that we have a first edition complete, we can think about enhancing connections among chapters. Chapter authors should look to see if a concept has already been introduced in prior chapters or the Appendices and take advantage of this content. Further, if an idea is presented that will amplified in later chapters, a short note to the reader foreshadowing additional explanation is very powerful. The goal is to minimize overlap and make each component as impactful as possible.
 
