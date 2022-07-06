@@ -1,0 +1,13 @@
+book_filename: "LossDataAnalytics"
+output_dir: "docs"
+rmd_files: [
+            "index.Rmd",
+#            "IntroInteractive.Rmd",
+#            "Quizzes/QuizChap.Rmd",
+ #           "Quizzes/QuizChapShort.Rmd"]            
+ #           "ExternalExercises.Rmd"
+ ]
+           
+language:
+  ui:
+    chapter_name: "Chapter "
