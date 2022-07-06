@@ -21,13 +21,13 @@ The first edition of [Loss Data Analytics](https://openacttexts.github.io/) was 
 
 In revising the book for the second edition, we now have the advantage of seeing the book in its entirety. We can use this base to promote cooperation and consistency among chapters. We did well with consistency of notation in the first edition but can now think strategically about how to develop topics within the book and how to make them accessible for different readerships.
 
-A working group (dubbed the [Steering Committee](S:Steer)) has developed this set of [principles to guide authors and editors](CGuide.html) in developing a new and better version of Loss Data Analytics. These principles apply to all chapters and appendices.
+A working group (dubbed the [Steering Committee](CSteer.html)) has developed this set of [principles to guide authors and editors](CGuide.html) in developing a new and better version of Loss Data Analytics. These principles apply to all chapters and appendices.
 
 
 The groups entire report is available using this download button: <a href="https://github.com/OpenActTextDev/LDA_Ed2_Strategy/raw/main/GuidingPinciples_05July2022.docx" download>
 <button type="button"  style="background-color:#008CBA;color:white">Download the Loss Data Analytics Principles</button></a>. In this report, we provide chapter by chapter advice to improve each chapter.
 
-## Steering Committee Members {-#S:Steer}
+# Steering Committee Members {-#CSteer}
 
 The project goal is to have the actuarial community author our learning resources in a collaborative fashion. The following contributors have taken a leadership role in developing this strategy to guide the development of the second edition of $Loss$ $Data$ $Analytics$.
 
