@@ -1,0 +1,57 @@
+# Guiding Principles for Authors and Associate Editors when Revising Loss Data Analytics
+
+
+
+A working group (dubbed the "Steering Committee") has developed the following sets of principles to guide authors and editors in developing a new and better version of Loss Data Analytics.
+
+## Types of Readers  
+
+We want to think beyond a traditional textbook where each concept is tightly integrated with prior portions of the book. Rather, think of this as a combination between this type of traditional textbook and a "wikipedia" type resource, where readers come in for selected sections. 
+With this as background, think about developing the book for the following different types of readers:
+
+*  A. *Beginning Students*. People with a year of calculus and one term of probability. No prior knowledge of mathematical statistics (but this course is a co-requisite), no knowledge of insurance/risk management. This book is their very first look at actuarial science. 
+*  B. *Intermediate Students*. People with a background in calculus, probability, mathematical statistics (and possibly regression). At least one course in insurance/risk management. 
+*  C. *Advanced Students*. People with more sophisticated mathematical background (e.g., type B about plus some stochastic processes) and good appreciation insurance/risk management.
+
+The intent is that the book will be suitable for all types of readers. The main body of the text is targeted towards something in between types (A) and (B), with appendices to fill in the gaps. With appropriate signposting, the book will also be helpful for those that are closer to type (C).
+
+## Goals
+
+When a reader uses the book, the goal is not to teach them skills to pass a given actuarial exam. Hopefully, by learning this material, it provides students with the knowledge necessary to do so eventually. In the same way, we do not wish to get into all the nuances needed to immediately use the techniques in practice.
+
+*  For example, try to minimize applications of multivariate ideas such as GLMs. Our focus is on providing educational background so that learners can compete in the workforce and have productive careers. 
+
+Rather, the goal is to educate readers on the principles of loss data analytics that serve as a foundation for those who wish to pass professional exams and use these concepts in practice. With this guiding principle in mind, it is certainly reasonable for authors to include sample questions that have appeared on actuarial exams or complicated situations that are practice relevant. Moreover, it is helpful to align our table of contents with the professional associations (to the extent possible). This provides readers with additional incentives to learn the materials. But, their inclusion should be motivated by the basic education principle, not goals in and of themselves.
+
+## Data, Data, Data
+
+In contrast to traditional loss data models, we want to emphasize data demonstrations. In the new edition, we will compile a "data dictionary" that will provide a single source of different data sets. 
+
+*  So for the examples and exercises, try not to emphasize examples that were developed for multiple choice (for professional exams) questions.  
+*  Sometimes, small "toy" data sets, having just a few observations, can be useful to explain ideas. 
+*  Strive to include analysis of data to illustrate the ideas.
+
+## Data and R
+
+We will use the "R" statistical software to illustrate loss data techniques. Consider using the work of Chapter 12 as a model to follow. Having said that, the book is about loss data analytics concepts, not about a specific software. The "R" scripts will be hidden (in the html version, in an appendix for the pdf version). In this way, the book will also be useful for Python or SAS users (for example). If an author thinks it useful, we can also include python or Excel scripts for secondary analyses. Authors can also look to incorporate examples done in the [Short Course on Loss Data Analytics](https://openacttexts.github.io/LDACourse1/), available at:  https://openacttexts.github.io/LDACourse1/ .
+
+## Definitions
+
+The book relies on concepts from probability, statistics, insurance, and statistical software, among other foundation areas. It is important to define terms clearly - moreover, a definition should typically appear only once in a book. Otherwise, multiple definitions that are similar can sometimes provide contradictory information. Now that a sound first edition is available, when you are defining new terms, check out definitions that appear elsewhere include other chapters, appendices, and the glossary. To promote consistency, we also have an Appendix on Notation Conventions (but try to minimize use of mathematical symbols).
+
+## Technical Demonstrations of Results
+
+We want to focus on the foundations and so short mathematical demonstrations of properties can be illuminating for some readers. However, we will use the "hide/show" feature so as not to distract from the main presentation of the ideas. So as not to intimidate early readers, try to minimize the amount of mathematical sophistication needed in the main body. For example, use "Proposition" instead of "Theorem" and use English words such as "is an element of" instead of a symbol. Naturally, this approach will make the work (slightly) longer but we can increase readership in this way. The Appendix on Notation Conventions is to maintain consistency among chapters, not promote the use of mathematical symbols.
+
+## Actuarial versus General Topics
+
+Because we are thinking of different types of readers, "signposting," or clearly labeling content, is important. In particular, we can expect some readers to have strong technical background in probability and statistics and wish to use the book for actuarial or insurance content. To achieve this goal, we want to clearly label sections or subsections as "actuarial" in nature.
+
+## Connections
+
+Now that we have a first edition complete, we can think about enhancing connections among chapters. Chapter authors should look to see if a concept has already been introduced in prior chapters or the Appendices and take advantage of this content. Further, if an idea is presented that will amplified in later chapters, a short note to the reader foreshadowing additional explanation is very powerful. The goal is to minimize overlap and make each component as impactful as possible.
+
+## Quizzes
+
+End of the section quizzes were added to chapters, not by chapter authors, but by an independent team. Because the team was working across many chapters, they may not have had the same depth of content knowledge as the chapter authors. Because we wish to retain the quizzes, we ask chapter authors to review and revise the end of section quizzes as appropriate.
+

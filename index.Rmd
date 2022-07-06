@@ -1,32 +1,97 @@
 --- 
-title: "Interactive Features of Loss Data Analytics"
+title: "Loss Data Analytics: Edition Two Strategy"
 author: "An open text authored by the Actuarial Community"
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook
 documentclass: book
 link-citations: yes
-github-repo: https://github.com/ewfrees/Loss-Data-Analytics/InteractiveLDA/
+github-repo: https://github.com/OpenActTextDev/LDA_Ed2_Strategy/
 
 ---
 
-# Preface {-}
+# Loss Data Analytics - Edition Two {-}
 
 <p style="text-align:right;">
 *Date: `r format(Sys.Date(), "%d %B %Y")`*</p>
 
-This repository describes interactive features of the *Loss Data Analytics* text that are being developed, in process, and in the planning stages. By **interactive features**, we start with simple things like layering content (such as Show/Hide way of displaying code below) and moving on from there.
 
 
-<h5 style="text-align: center;"><a id="display.T:Frequency.1Intro" href="javascript:togglecode
-('display.T:Frequency.2Intro','display.T:Frequency.1Intro');"><i><strong>R Code for Frequency Table</strong></i></a> </h5>
-<div id="display.T:Frequency.2Intro" style="display: none">
+The first edition of *Loss Data Analytics* was completed in August 2018; some might say that the development was organic. We managed to get 19 authors from 8 countries in more or less in the same direction; the product is a free online book that was written in "R" and is hosted on Github. 
 
-```
-Insample <- read.csv("Insample.csv", header=T,  na.strings=c("."), stringsAsFactors=FALSE)
-Insample2010 <- subset(Insample, Year==2010)
-table(Insample2010$Freq)
-```
-</div>
-  
+In revising the book for the second edition, we now have the advantage of seeing the book in its entirety. We can use this base to promote cooperation and consistency among chapters. We did well with consistency of notation in the first edition but can now think strategically about how to develop topics within the book and how to make them accessible for different readerships.
 
+
+
+
+## Steering Committee Members {-}
+
+The project goal is to have the actuarial community author our learning resources in a collaborative fashion. The following contributors have taken a leadership role in developing this strategy to guid the development of the second edition of $Loss$ $Data$ $Analytics$.
+
+<img src = "ContributorPics\ZeinabAmin.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" />
+
+- **Zeinab Amin** is a Professor at the Department of Mathematics and Actuarial Science and Associate Provost for Assessment and Accreditation at the American University in Cairo (AUC).
+
+
+<img src = "ContributorPics\MiukiEbisaki.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" />
+
+
+-  **Miyuki Ebisaki** is a Manager at Deloitte Touche Tohmatsu LLC in Japan. 
+
+<br>
+
+
+
+<img src = "ContributorPics\Frees_Jed2018_150x188.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" />
+
+- **Edward (Jed) Frees** is an emeritus professor, formerly the Hickman-Larson Chair of Actuarial Science at the University of Wisconsin-Madison and currently affiliated with Australian National University.
+
+<img src = "ContributorPics\BrianHartmanPortrait.jpg" width = "150" height = "200" style = "float:right; margin-left: 10px; margin-top: 7px" />
+
+-  **Brian Hartman** is an associate professor of statistics and actuarial program coordinator at Brigham Young University. 
+
+-  **Tim Higgins** is an associate professor of actuarial studies and deputy director of the school of finance, actuarial studies and statistics at the Australian National University (ANU). 
+
+<img src = "ContributorPics\Noriszura.jpg" width = "150" height = "150" style = "float:right; margin-left: 10px; margin-top: 7px" />
+
+- **Noriszura Ismail** is a Professor and Head of Actuarial Science Program, Universiti Kebangsaan Malaysia (UKM). 
+
+
+
+
+
+
+***
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+<!-- **Miscellaneous** -->
+
+<!-- We retrieved the Challenge icon from [Nice png](https://www.nicepng.com/) under a Creative Commons license. -->
+
+
+
+# A Word from our Sponsor: <br> Astin + Education = Astin Academy {-}
+
+***
+
+In this video, you learn about:
+
+-  the role of the [ASTIN section](https://www.actuaries.org/iaa/IAA/Sections/ASTIN_NEW/IAA/Sections/ASTIN_NEW/ASTIN_HOME.aspx), the non-life section of the International Actuarial Association
+-  their recent interest in education
+-  their development of the recently formed *Astin Academy*.
+
+>"*The mission of the ASTIN Academy is to provide high quality free educational materials in non-life insurance to actuarial students across the world. The Academy is committed to open course development under Creative Commons licence and seeks innovation in teaching methodologies and application of technology. Let’s build the future of actuarial education together.*"
+
+***
+
+#### Video: Overview of the Astin Academy {-}
+
+<center>
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25717641/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=1_56ho6ss4&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en_US&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_0dcwagec" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *"  frameborder="0" title="Kaltura Player"></iframe>
+
+</center>
+
+***

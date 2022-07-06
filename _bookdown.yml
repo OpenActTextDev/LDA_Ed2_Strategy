@@ -1,13 +1,8 @@
-book_filename: "LossDataAnalytics"
+book_filename: "LossDataAnalyticsEd2Strategy"
 output_dir: "docs"
-rmd_files: [
-            "index.Rmd",
-#            "IntroInteractive.Rmd",
-#            "Quizzes/QuizChap.Rmd",
- #           "Quizzes/QuizChapShort.Rmd"]            
- #           "ExternalExercises.Rmd"
- ]
+rmd_files: ["index.Rmd","GuidingPrinciples.Rmd"]            
+
            
 language:
   ui:
-    chapter_name: "Chapter "
+

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Preface | Interactive Features of Loss Data Analytics</title>
+  <meta name="description" content="Preface | Interactive Features of Loss Data Analytics" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Preface | Interactive Features of Loss Data Analytics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="https://github.com/ewfrees/Loss-Data-Analytics/InteractiveLDA/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Preface | Interactive Features of Loss Data Analytics" />
+  
+  
+  
+
+<meta name="author" content="An open text authored by the Actuarial Community" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+<!-- Mathjax Version 2-->
+<script type='text/x-mathjax-config'>
+		MathJax.Hub.Config({
+			extensions: ['tex2jax.js'],
+			jax: ['input/TeX', 'output/HTML-CSS'],
+			tex2jax: {
+				inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+				displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+				processEscapes: true
+			},
+			'HTML-CSS': { availableFonts: ['TeX'] }
+		});
+</script>
+
+<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"> </script>
+
+<!-- May wish to upgrade to Mathjax Version 3 Soon-->
+
+
+<!-- The following code is for the quizzes -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/survey-jquery/survey.jquery.min.js"></script>
+<link href="https://unpkg.com/survey-jquery/modern.min.css" type="text/css" rel="stylesheet">
+<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+
+
+<!-- This is the code before 2022 ...
+
+<script src="https://surveyjs.azureedge.net/1.0.50/survey.jquery.js"></script>
+<link href="https://surveyjs.azureedge.net/1.0.50/survey.css" type="text/css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>  
+ -->
+ 
+ 
+<script>
+function markdownConverterEWF() {  
+//Create showdown markdown converter
+var converter = new showdown.Converter();
+converter.setOption('ghCompatibleHeaderId', true);
+survey
+    .onTextMarkdown
+    .add(function (survey, options) {
+        //convert the markdown text to html
+        var str = converter.makeHtml(options.text);
+        //remove root paragraphs <p></p>
+        str = str.substring(3);
+        str = str.substring(0, str.length - 4);
+        //set html
+        options.html = str;
+        MathJax.Hub.Queue(['Typeset',MathJax.Hub, 'options']);
+    });  
+};
+
+// Quiz Header info
+const jsonHeader = { 
+    showProgressBar: "bottom",
+    showTimerPanel: "none",
+    maxTimeToFinishPage: 10000,
+    maxTimeToFinish: 25000,
+    firstPageIsStarted: true,
+    startSurveyText: "Start Quiz" //,
+//    title: "Does This Make Sense?"
+}
+
+
+// One and Two question quizzes
+function jsonSummary1EWF(json) {  
+let jsonEnd1 = { 
+completedHtml: 
+json["pages"][1]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][1]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][1]["questions"][0]["correctAnswer"]
+};  
+return jsonEnd1;
+};
+
+
+function jsonSummary2EWF(json) {  
+let jsonEnd2 = { 
+completedHtml: 
+json["pages"][1]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][1]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][1]["questions"][0]["correctAnswer"]
++"<br>"+
+json["pages"][2]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][2]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][2]["questions"][0]["correctAnswer"]
+};  
+return jsonEnd2;
+};
+
+// Three, four, and five question quizzes
+function jsonSummary3EWF(json) {  
+let jsonEnd3 = { 
+completedHtml: 
+json["pages"][1]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][1]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][1]["questions"][0]["correctAnswer"]
++"<br>"+
+json["pages"][2]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][2]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][2]["questions"][0]["correctAnswer"]
++"<br>"+
+json["pages"][3]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][3]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][3]["questions"][0]["correctAnswer"]
+};  
+return jsonEnd3;
+};
+
+function jsonSummary4EWF(json) {  
+jsonEnd4 = jsonSummary3EWF(json);
+jsonEnd4.completedHtml = jsonEnd4.completedHtml +  
+"<br>"+
+json["pages"][4]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][4]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][4]["questions"][0]["correctAnswer"]
+;  
+return jsonEnd4;
+};
+
+function jsonSummary5EWF(json) {  
+jsonEnd5 = jsonSummary4EWF(json);
+jsonEnd5.completedHtml = jsonEnd5.completedHtml +  
+"<br>"+
+json["pages"][5]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][5]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][5]["questions"][0]["correctAnswer"]
+;  
+return jsonEnd5;
+};
+
+function jsonSummary6EWF(json) {  
+jsonEnd6 = jsonSummary5EWF(json);
+jsonEnd6.completedHtml = jsonEnd6.completedHtml +  
+"<br>"+
+json["pages"][6]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][6]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][6]["questions"][0]["correctAnswer"]
+;  
+return jsonEnd6;
+};
+
+function jsonSummary7EWF(json) {  
+jsonEnd7 = jsonSummary6EWF(json);
+jsonEnd7.completedHtml = jsonEnd7.completedHtml +  
+"<br>"+
+json["pages"][7]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][7]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][7]["questions"][0]["correctAnswer"]
+;  
+return jsonEnd7;
+};
+
+function jsonSummary8EWF(json) {  
+jsonEnd8 = jsonSummary7EWF(json);
+jsonEnd8.completedHtml = jsonEnd8.completedHtml +  
+"<br>"+
+json["pages"][8]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][8]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][8]["questions"][0]["correctAnswer"]
+;  
+return jsonEnd8;
+};
+
+function jsonSummary9EWF(json) {  
+jsonEnd9 = jsonSummary8EWF(json);
+jsonEnd9.completedHtml = jsonEnd9.completedHtml +  
+"<br>"+
+json["pages"][9]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][9]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][9]["questions"][0]["correctAnswer"]
+;  
+return jsonEnd9;
+};
+
+
+function jsonSummary10EWF(json) {  
+jsonEnd10 = jsonSummary9EWF(json);
+jsonEnd10.completedHtml = jsonEnd10.completedHtml +  
+"<br>"+
+json["pages"][10]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][10]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][10]["questions"][0]["correctAnswer"]
+;  
+return jsonEnd10;
+};
+
+
+function jsonSummary11EWF(json) {  
+jsonEnd11 = jsonSummary10EWF(json);
+jsonEnd11.completedHtml = jsonEnd11.completedHtml +  
+"<br>"+
+json["pages"][11]["questions"][0]["name"]+ "<br>"+
+"<i>Question: </i>"+json["pages"][11]["questions"][0]["title"]+"<br>"+
+"<i>Answer: </i>"+json["pages"][11]["questions"][0]["correctAnswer"]
+;  
+return jsonEnd11;
+};
+
+
+
+</script>  
+<!-- This completes the code for the quizzes -->
+
+
+<!-- Various toggle functions used throughout --> 
+<script language="javascript">
+function toggle(id1,id2) {
+	var ele = document.getElementById(id1); var text = document.getElementById(id2);
+	if (ele.style.display == "block") {ele.style.display = "none"; text.innerHTML = "Show Solution";}
+		else {ele.style.display = "block"; text.innerHTML = "Hide Solution";}}
+function togglecode(id1,id2) {
+   var ele = document.getElementById(id1); var text = document.getElementById(id2);
+   if (ele.style.display == "block") {ele.style.display = "none"; text.innerHTML = "Show R Code";}
+      else {ele.style.display = "block"; text.innerHTML = "Hide R Code";}}
+function toggleEX(id1,id2) {
+   var ele = document.getElementById(id1); var text = document.getElementById(id2);
+   if (ele.style.display == "block") {ele.style.display = "none"; text.innerHTML = "Show Example";}
+      else {ele.style.display = "block"; text.innerHTML = "Hide Example";}}
+function toggleTheory(id1,id2) {
+   var ele = document.getElementById(id1); var text = document.getElementById(id2);
+   if (ele.style.display == "block") {ele.style.display = "none"; text.innerHTML = "Show Theory";}
+      else {ele.style.display = "block"; text.innerHTML = "Hide Theory";}}
+function toggleQuiz(id1,id2) {
+   var ele = document.getElementById(id1); var text = document.getElementById(id2);
+   if (ele.style.display == "block") {ele.style.display = "none"; text.innerHTML = "Show Quiz Solution";}
+      else {ele.style.display = "block"; text.innerHTML = "Hide Quiz Solution";} }      
+</script>
+
+<!-- A few functions for revealing definitions -->
+<script language="javascript">
+<!--   $( function() {
+    $("#tabs").tabs();
+  } ); -->
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+
+<script language="javascript">
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125587869-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125587869-1');
+</script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Interactive Features of Loss Data Analytics</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#preface">Preface<span></span></a></li>
+<li><a href="preface-1.html#preface-1">Preface<span></span></a>
+<ul>
+<li><a href="preface-1.html#why-loss-data-analytics">Why Loss Data Analytics?<span></span></a></li>
+<li><a href="preface-1.html#resources">Resources<span></span></a></li>
+<li><a href="preface-1.html#how-to-navigate-this-tutorial">How to Navigate this Tutorial<span></span></a></li>
+<li><a href="preface-1.html#a-word-from-our-sponsor-astin-education-astin-academy">A Word from our Sponsor: <br> Astin + Education = Astin Academy<span></span></a></li>
+<li><a href="preface-1.html#contributors">Contributors<span></span></a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/ewfrees/InteractiveLDA" target="blank">Interactive Features of LDA on GitHub</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Interactive Features of Loss Data Analytics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="preface-1" class="section level1 unnumbered hasAnchor">
+<h1>Preface<a href="preface-1.html#preface-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p style="text-align:right;">
+<em>Date: 06 July 2022</em>
+</p>
+<div id="why-loss-data-analytics" class="section level2 unnumbered hasAnchor">
+<h2>Why Loss Data Analytics?<a href="preface-1.html#why-loss-data-analytics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The intent is that this type of short course will eventually permeate throughout the actuarial curriculum. Given the dramatic changes in the way that actuaries treat data, analysis of loss data seems like a natural place to start. The idea behind the name <strong>loss data analytics</strong> is to integrate classical loss data models from applied probability with modern analytic tools. In particular, we recognize that big data (including social media and usage based insurance) are here to stay and that high speed computation is readily available.</p>
+</div>
+<div id="resources" class="section level2 unnumbered hasAnchor">
+<h2>Resources<a href="preface-1.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>This tutorial is based on the first five chapters of the <strong>open and freely available book</strong> <a href="https://openacttexts.github.io/">Loss Data Analytics</a>.
+<ul>
+<li>As the name suggests, <a href="https://openacttexts.github.io/LDARcode/">R for Loss Data Analytics</a> provides sample <code>R</code> code for the book, although not needed for this tutorial.</li>
+</ul></li>
+<li>As described in how to navigate this tutorial below, you will not need to download any data for this course. However, if you want to have the data to follow up, we generally make it available through buttons such as:
+<ul>
+<li><button download>
+<a href="https://raw.githubusercontent.com/OpenActTexts/LDACourse1/main/Data/PropertyFundInsample.csv">View the Property Fund Data as a .csv file.</a>
+</button>
+Then, do a “Save Page as” if you wish to download.</li>
+<li>Alternatively, go directly to the <a href="https://github.com/OpenActTexts/LDACourse1/tree/main/Data">Github page</a> to access the data.</li>
+</ul></li>
+<li>For advanced data applications in insurance, you may be interested in the series <a href="http://www.cambridge.org/us/academic/subjects/statistics-probability/statistics-econometrics-finance-and-insurance/predictive-modeling-applications-actuarial-science-volume-1">Predictive Modeling Applications in Actuarial Science</a>. Although the books are not free, for many of the chapters you will find the data and sample <code>R</code> code <a href="https://instruction.bus.wisc.edu/jfrees/jfreesbooks/PredictiveModelingVol1/index.htm">freely available</a>.</li>
+</ul>
+</div>
+<div id="how-to-navigate-this-tutorial" class="section level2 unnumbered hasAnchor">
+<h2>How to Navigate this Tutorial<a href="preface-1.html#how-to-navigate-this-tutorial" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>This online tutorial is designed to guide you through the foundations of modeling loss data.</li>
+<li>The anticipated completion time is approximately ten hours.</li>
+<li>The tutorial assumes that you are familiar with the foundations in the statistical software <code>R</code>, such as Datacamp’s <a href="https://www.datacamp.com/courses/free-introduction-to-r%20">Introduction to R</a> or Codecademy’s <a href="https://www.codecademy.com/learn/learn-r">Learn R</a>.</li>
+</ul>
+<p><strong>Role of Video Introductions.</strong> There are five chapters in this tutorial that summarize the foundations. Each chapter is subdivided into several sections. At the beginning of each section is a short video, typically 5-10 minutes, that summarizes the section key learning outcomes. Following the video, you can see more details about the underlying <code>R</code> code for the analysis presented in the video.</p>
+<p><strong>Role of Exercises.</strong> Following each video introduction, there are one or two exercises that allow you to practice skills to make sure that you fully grasp the learning outcomes. The exercises are implemented using an online learning platform provided by <a href="https://www.datacamp.com/">Datacamp</a> so that you need not install <code>R</code>. Feedback is programmed into the exercises so that you will learn a lot by making mistakes! You will be pacing yourself, so always feel free to reveal the answers by hitting the <code>Solution</code> tab. Remember, going through quickly is not equivalent to learning deeply. Use this tool to enhance your understanding of one of the foundations of data science.</p>
+<div id="video-overview-of-tutorial-navigation" class="section level4 unnumbered hasAnchor">
+<h4>Video: Overview of Tutorial Navigation<a href="preface-1.html#video-overview-of-tutorial-navigation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<center>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25717641/partner_id/1660902?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_ouy8g8ib&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en_US&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_a9yksglu" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player">
+</iframe>
+</center>
+<p><br></p>
+<p><strong>A Few More Tips</strong></p>
+<ul>
+<li>For the videos, with this player you hit the <strong>CC</strong> button and then <em>English</em> to see closed captions. You can also experiment with the speed of the video (the <em>1x</em> symbol) and other standard video player features.</li>
+<li>When completing the tutorial exercises, replace the question marks <strong>??</strong> by the appropriate code (in earlier versions, we used underscores).</li>
+<li>The graphical displays upon completion of the tutorial exercises appear only in the narrow window of the code and do not look good. This is a limitation of the <em>Datacamp</em> platform. For a more professional looking graph, in many cases you can simply copy the code and paste it into your own version of <code>R</code> to enhance its appearance. However, be careful with this approach. Sometimes, as part of the background, we pre-load data and libraries that you don’t see unless you dig down. (How to do this? Go to our <a href="https://github.com/OpenActTextDev/LDACourse1/">Github site</a>!)</li>
+<li>When a tutorial exercise finishes with a graph, the (green) success message is obscured. To see it, after completing the exercise, hit the “R-Console” button at the top. Then re-size the html page and immediately revert back to the full page mode. This procedure allows you to view the message.</li>
+<li><strong>Devices and Browsers</strong>. We tested the course on popular devices and browers. Our videos and tutorial exercises seemed to behave well on all the devices we looked at, including cell phones, Ipads, Apple and PC laptop/desktops. Most problematic is the .pdf overheads. These don’t seem to work well at all on cell phones and Ipads. For Apple and PC laptop/desktops:
+<ul>
+<li>When you view the .pdf output for the overheads with the browser FireFox, the default is for the table of contents to appear. The fix for this is to click the icon in the upper left-hand corner.</li>
+<li>For other browsers we tested (Edge and Chrome), the page of the .pdf that you select on appears the first time. You can either refresh every time you select a new page or, an easier route, scroll down to the appropriate page to see the desired output.</li>
+</ul></li>
+<li>Let us know about other bugs you encounter. We may not be able to address them but at least we can add notes here to warn other users.<br />
+</li>
+<li>Some of the exercises are more challenging and you may wish to skip them on your first pass through the course. These are indicated with this symbol:
+<img src = "ContributorPics/hurdler.png" width = "65" height = "65" style = "float:right; margin-left: 10px; margin-top: 7px" /></li>
+</ul>
+</div>
+</div>
+<div id="a-word-from-our-sponsor-astin-education-astin-academy" class="section level2 unnumbered hasAnchor">
+<h2>A Word from our Sponsor: <br> Astin + Education = Astin Academy<a href="preface-1.html#a-word-from-our-sponsor-astin-education-astin-academy" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr />
+<p>In this video, you learn about:</p>
+<ul>
+<li>the role of the <a href="https://www.actuaries.org/iaa/IAA/Sections/ASTIN_NEW/IAA/Sections/ASTIN_NEW/ASTIN_HOME.aspx">ASTIN section</a>, the non-life section of the International Actuarial Association</li>
+<li>their recent interest in education</li>
+<li>their development of the recently formed <em>Astin Academy</em>.</li>
+</ul>
+<blockquote>
+<p>“<em>The mission of the ASTIN Academy is to provide high quality free educational materials in non-life insurance to actuarial students across the world. The Academy is committed to open course development under Creative Commons licence and seeks innovation in teaching methodologies and application of technology. Let’s build the future of actuarial education together.</em>”</p>
+</blockquote>
+<hr />
+<div id="video-overview-of-the-astin-academy" class="section level4 unnumbered hasAnchor">
+<h4>Video: Overview of the Astin Academy<a href="preface-1.html#video-overview-of-the-astin-academy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<center>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25717641/partner_id/1660902?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_56ho6ss4&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en_US&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_0dcwagec" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player">
+</iframe>
+</center>
+<hr />
+</div>
+</div>
+<div id="contributors" class="section level2 unnumbered hasAnchor">
+<h2>Contributors<a href="preface-1.html#contributors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The project goal is to have the actuarial community author our learning resources in a collaborative fashion. The following contributors have taken a leadership role in developing this short course for <span class="math inline">\(Loss\)</span> <span class="math inline">\(Data\)</span> <span class="math inline">\(Analytics\)</span>.</p>
+<p><img src = "ContributorPics/YvoneChueh.jpg" width = "150" height = "160" style = "float:right; margin-left: 10px; margin-top: 7px; margin-bottom: 15px" /></p>
+<ul>
+<li><strong>Yvonne Chueh</strong> is a professor at Central Washington University. She received PhD from the University of Connecticut, bachelor degree in pure math from National Taiwan University. She has taught actuarial courses at UCONN and UW-Eau Claire. She is an associate (since 1994) and council member/chair (2013-2017/2017) of the Society of Actuaries (SOA) Education &amp; Research Section. Her research works were published by the American Academy of Actuaries, the Actuarial Foundation, SOA <em>North American Actuarial Journal</em>, <em>Electrical Engineering Series</em> of Springer, <em>International Joint Conference on Neural Networks</em>, <em>IEEE Symposium Series on Computational Intelligence (SSCI)</em>, and <em>International Journal of Computers, Communications &amp; Control</em>.</li>
+</ul>
+<p><img src = "ContributorPics/MiukiEbisaki.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Miyuki Ebisaki</strong> is a Manager at Deloitte Touche Tohmatsu LLC in Japan. Her research work is in the area of insurance, health care, social economy and new technologies. She has been working in domestic and foreign insurers in Japan and in the UK. She has various experiences both in non-life and life insurance; including product development, chief actuary, M&amp;A and risk management. In May 2020, she was elected as a member of the ASTIN board.</li>
+</ul>
+<p><br></p>
+<p><img src = "ContributorPics/RobErhardt.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Rob Erhardt</strong> is an Associate Professor of Statistics at Wake Forest University in Winston-Salem, NC. He holds a Ph.D. in Statistics and Operations Research from the University of North Carolina at Chapel Hill, an M.S. in Statistics from the University of Wisconsin-Madison, and a B.A. in Physics from SUNY Geneseo. He is also a credentialed actuary and Society of Actuaries Hickman Scholar. His research areas include environmental statistics, computational statistics, and actuarial science, with a particular interest in work at the intersection of insurance and climate risk. Originally from rural New York State, he is an avid runner and backpacker, and a poor jazz pianist.</li>
+</ul>
+<p><br></p>
+<p><img src = "ContributorPics/Frees_Jed2018_150x188.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Edward W. (Jed) Frees</strong> is an emeritus professor, formerly the Hickman-Larson Chair of Actuarial Science at the University of Wisconsin-Madison and currently affiliated with Australian National University. He is a Fellow of both the Society of Actuaries and the American Statistical Association. He has published extensively (a four-time winner of the Halmstad Prize for best paper published in the actuarial literature) and has written three books. He also is a co-editor of the two-volume series <em>Predictive Modeling Applications in Actuarial Science</em> published by Cambridge University Press.</li>
+</ul>
+<p><img src = "ContributorPics/BrianHartmanPortrait.jpg" width = "150" height = "200" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><p><strong>Brian Hartman</strong> is an associate professor of statistics and actuarial program coordinator at Brigham Young University. His current research interests include Bayesian methods and their applications in actuarial science and risk. He has worked in various capacities with companies in property-casualty, health, and long-term care insurance. He holds a Bachelor’s degree in Actuarial Science from Brigham Young University and a PhD in Statistics from Texas A&amp;M University. He is also an associate of the Society of Actuaries. Before BYU, he was a post-doctoral fellow at the University of Waterloo (2010-11) and an assistant professor at the University of Connecticut (2011-15).</p></li>
+<li><p><strong>Tim Higgins</strong> is an associate professor of actuarial studies and deputy director of the school of finance, actuarial studies and statistics at the Australian National University (ANU). Prior to academia he had positions in the Australian Commonwealth Treasury and the Australian Prudential Regulation Authority. He is a Fellow of the Institute of Actuaries of Australia. His main research interest is in income contingent loan theory, modelling and applications, and his other research interests include microsimulation modelling, financial literacy and behaviour, and superannuation and retirement policy. He has taught actuarial and statistics students at ANU since 2002, and received the ANU Vice Chancellor’s Award for Teaching Excellence in 2005.</p></li>
+</ul>
+<p><img src = "ContributorPics/FeiHuang.jpg" width = "150" height = "200" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Fei Huang</strong> is a Senior Lecturer in the School of Risk and Actuarial Studies, University of New South Wales (UNSW) Sydney. Before joining UNSW, she worked at the Australian National University (ANU) as Senior Lecturer (2019-2020) and Lecturer (2015-2018). Fei’s main research interest lies in predictive modelling and data analytics for insurance applications. She is an active researcher and publishes papers frequently in top-tier actuarial journals. Fei is also a dedicated educator. Her educational excellence has been recognized by winning the ANU Vice Chancellor’s Award for Teaching Excellence in the Early Career Category (2018) and ANU College of Business and Economics Award for Teaching Excellence in the Early Career Category (2017).</li>
+</ul>
+<p><img src = "ContributorPics/HimchanJeong.jpg" width = "150" height = "160" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Himchan Jeong</strong> is currently an Assistant Professor at Simon Fraser University. He is a Fellow of the Society of Actuaries (SOA) and holds a Ph.D. from the University of Connecticut. He has been actively involved in teaching and conducting research in actuarial science for several years. In recognition for his academic achievements and excellence, he has been awarded the James C. Hickman Scholarship from SOA recently in 2018-2020. His current research interest is predictive modeling for ratemaking and reserving of property and casualty insurance.</li>
+</ul>
+<p><img src = "ContributorPics/PJ.jpg" width = "150" height = "170" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Paul H. Johnson, Jr.</strong> is a lecturer in the Risk and Insurance Department of the Wisconsin School of Business at the University of Wisconsin-Madison. He has an MS in Actuarial Science and a PhD in Business (Actuarial Science), both from UW-Madison. Paul teaches undergraduate courses in life contingencies, loss models, regression, and analytics. Prior to teaching at UW-Madison, Paul received various honors and awards for teaching excellence in the Department of Mathematics at the University of Illinois at Urbana-Champaign; most notably, the N. Tenney Peck Teaching Award in Mathematics. He also has published articles in the <em>North American Actuarial Journal</em> and the <em>Risk Management and Insurance Review</em>.</li>
+</ul>
+<p><img src = "ContributorPics/Okine_A.jpg" width = "150" height = "170" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Nii-Armah Okine</strong> is an assistant professor at the Mathematical Sciences Department at Appalachian State University. He holds a Ph.D. in Business (Actuarial Science) from the University of Wisconsin - Madison and obtained his master’s degree in Actuarial science from Illinois State University. His research interest includes micro-level reserving, joint longitudinal-survival modeling, dependence modeling, micro-insurance, and machine learning.</li>
+</ul>
+<p><br></p>
+<p><img src = "ContributorPics\RajSahasrabuddhe.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Rajesh (Raj) Sahasrabuddhe</strong> is a Partner and Philadelphia Office Leader with Oliver Wyman Actuarial Consulting. Raj is a Fellow of the Casualty Actuarial Society (CAS), an Associate of the Canadian Institute of Actuaries, and a Member of the American Academy of Actuaries. Raj has been an active volunteer with CAS Admissions committees throughout his career, including a term as Chairperson of the Syllabus Committee from 2010 to 2013. He currently serves on the MAS-II Examination Committee. He has authored or co-authored papers that have appeared on syllabi for both the CAS and Society of Actuaries.</li>
+</ul>
+<p><img src = "ContributorPics/Shi_Peng_150x188.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Peng Shi</strong> is an associate professor in the Risk and Insurance Department at the Wisconsin School of Business. He is also the Charles &amp; Laura Albright Professor in Business and Finance. Professor Shi is an Associate of the Casualty Actuarial Society (ACAS) and a Fellow of the Society of Actuaries (FSA). He received a Ph.D. in actuarial science from the University of Wisconsin-Madison. His research interests are problems at the intersection of insurance and statistics. He has won several research awards, including the Charles A. Hachemeister Prize, the Ronald Bornhuetter Loss Reserve Prize, and the American Risk and Insurance Association Prize.</li>
+</ul>
+<p><img src = "ContributorPics/Shyamal.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Nariankadu D. Shyamalkumar (Shyamal)</strong> is an associate professor in the Department of Statistics and Actuarial Science at The University of Iowa. He is an Associate of the Society of Actuaries, and has volunteered in various elected and non-elected roles within the SoA. Having a broad theoretical interest as well as interest in computing, he has published in prominent actuarial, computer science, probability theory, and statistical journals. Moreover, he has worked in the financial industry, and since then served as an independent consultant to the insurance industry. He has experience educating actuaries in both Mexico and the US, serving in the roles of directing an undergraduate program, and as a graduate adviser for both masters and doctoral students.</li>
+</ul>
+<p><img src = "ContributorPics/FrankQuan.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Zhiyu (Frank) Quan</strong> is an Assistant Professor at the Department of Mathematics of the University of Illinois at Urbana-Champaign. He holds a Ph.D. in Actuarial Science from the University of Connecticut. Before joining Illinois, he worked for a cutting-edge Insurtech company as a R &amp; D data scientist developing data-driven solutions for major insurance companies. He has a broad spectrum of research interests in data science applications in insurance such as tree-based models, natural language processing, deep learning, and applies his actuarial expertise to build predictive models for claim research, rate making, etc. His research projects are driven by real-life data and are inspired from collaborations with Insurtech and insurance companies. Besides, he is a faculty advisor for the Illinois Risk Lab, which facilitates research activities that integrate academic training with practical problem-solving in real business settings. He recently has received the Arnold O. Beckman Research Award.</li>
+</ul>
+<p><img src = "ContributorPics/19-Michelle_Xia-0820-WD-01.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Michelle Xia</strong> is an Associate Professor in in the Department of Statistics and Actuarial Science at Northern Illinois University. Michelle earned her Ph.D. in statistics from the University of British Columbia. Besides research, teaching and consulting at NIU, Michelle has over seven years of professional experience as an actuary, a predictive modeler and a statistician in the insurance and medical areas. Michelle’s research is motivated by real-life problems, with current interests including predictive analytics, misrepresentation modeling, dependence modeling, insurance ratemaking and loss reserving.</li>
+</ul>
+<p><br></p>
+<p><strong>Practicing Actuary Perspective Contributors</strong></p>
+<p><img src = "ContributorPics/LBosch.jpg" width = "150" height = "170" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Laura Bosch</strong> is a P &amp; C Actuarial Analyst with Willis Towers Watson. Laura has over six years of experience in the property and casualty insurance industry and specializes in reserving. She has worked in projects for U.S. and Canadian based insurance companies. Her recent projects and experience includes commercial lines’ reserving including commercial auto, general liability, workers’ compensation, professional liability, and property, reinsurance reserving, economic balance sheet (Bermuda-related calculations); software: Igloo, NAIC Statements of Actuarial Opinion, financial Condition Testing projects for Canadian clients, recently IFRS 17 related projects for Canadian clientsAnalyst support in a due diligence process for a M&amp;A. Laura graduated from the <em>Instituto Tecnológico Autónomo de México</em> and holds a Bachelor of science degree in actuarial science. She also obtained a Diploma in investment inalysis from the same institution.</li>
+</ul>
+<p><img src = "ContributorPics/MotoharuDei.png" width = "150" height = "170" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Motoharu Dei</strong> is a Fellow of Institute of Actuaries of Japan (FIAJ) since 2010, and a data scientist of Accenture New York City office. He holds MSc degrees in Architecture in Data Science from University of Tokyo in Japan and Data ScienceTech Institute in France. He is a member of ASTIN Research Group in Institute of Actuary of Japan since 2014. As a research group member, he worked on the official translations into Japanese of Predictive Modeling Applications in Actuarial Science edited by professor Edward Frees. Motoharu has been engaged in various data analysis projects inside or outside of actuarial fields; such as life, medical, and health insurance product pricing based on large scale real-world data, drug brand comparison study, marketing data analysis, time-series forecasting of media view, and so forth. He has also strengths in analytic solution implementation using the cloud solutions as an AWS Certified Solution Architect Associate and an AWS Certified Machine Learning Specialty.</li>
+</ul>
+<p><br></p>
+<p><img src = "ContributorPics/Roosevelt-MosleyEdit.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" /></p>
+<ul>
+<li><strong>Roosevelt Mosley</strong> is a principal and consulting actuary with Pinnacle Actuarial Resources and has been in the property/casualty industry since 1994. His skill set includes predictive analytics applications for all insurance functions, ratemaking and product development, competitive analysis and litigation support. Roosevelt is the current president-elect of the CAS and has served on numerous task forces, committees and boards throughout his career.</li>
+</ul>
+<p><br></p>
+<p><strong>Reviewers</strong></p>
+<p>Our goal is to have the actuarial community author our textbooks and short courses in a collaborative fashion. Part of the process involves reviewers who generously donated their time to help make this course better. They are:</p>
+<ul>
+<li>Yumo Dong, Australian National University</li>
+<li>Motoya Kosaki</li>
+<li>Aisha Nuval Othman, Malaysian Reinsurance</li>
+<li>Alyaa Nuval Othman, Malaysian Reinsurance</li>
+<li>Sahadeb Upretee, Central Washington University</li>
+</ul>
+<hr />
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<!-- **Miscellaneous** -->
+<!-- We retrieved the Challenge icon from [Nice png](https://www.nicepng.com/) under a Creative Commons license. -->
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
