@@ -10,22 +10,27 @@ github-repo: https://github.com/OpenActTextDev/LDA_Ed2_Strategy/
 
 ---
 
-# {-}
+# A New Edition {-}
 
 <p style="text-align:right;">
 *Date: `r format(Sys.Date(), "%d %B %Y")`*</p>
-
-
 
 The first edition of [Loss Data Analytics](https://openacttexts.github.io/) was completed in August 2018; some might say that the development was organic. We managed to get 19 authors from 8 countries in more or less in the same direction; the product is a free online book that was written in **R** and is hosted on Github. 
 
 In revising the book for the second edition, we now have the advantage of seeing the book in its entirety. We can use this base to promote cooperation and consistency among chapters. We did well with consistency of notation in the first edition but can now think strategically about how to develop topics within the book and how to make them accessible for different readerships.
 
-A working group (dubbed the [Steering Committee](CSteer.html)) has developed this set of [principles to guide authors and editors](CGuide.html) in developing a new and better version of *Loss Data Analytics*. These principles apply to all chapters and appendices.
+A working group (dubbed the [Steering Committee](CSteer.html)) has developed a set of [principles to guide authors and editors](CGuide.html) that we hope will lead to a new and better version of *Loss Data Analytics*. These principles apply to all chapters and appendices.
 
 
-The group's entire report is available using this download button: <a href="https://github.com/OpenActTextDev/LDA_Ed2_Strategy/raw/main/GuidingPinciples_05July2022.docx" download>
+The group's entire report is available using this download button: <a href="https://github.com/OpenActTextDev/LDA_Ed2_Strategy/raw/main/GuidingPinciples_26July2022.docx" download>
 <button type="button"  style="background-color:#008CBA;color:white">Download the Loss Data Analytics Revision Principles</button></a>. This report provides not only general principles but also **chapter by chapter** advice for improving *Loss Data Analytics.*
+
+
+***
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 
 
 # Steering Committee Members {-#CSteer}
@@ -63,19 +68,16 @@ The project goal is to have the actuarial community author our learning resource
 
 <br><br><br>
 
+<img src = "ContributorPics\iwahirophoto.jpg" width = "150" height = "150" style = "float:right; margin-left: 10px; margin-top: 7px" />
+
+- **Hirokazu (Iwahiro) Iwasawa** is an educator affiliated with Waseda University, Tokyo University, and the Institute of Actuaries of Japan.
+
+<br><br><br>
+
+
 <img src = "ContributorPics\Noriszura.jpg" width = "150" height = "150" style = "float:right; margin-left: 10px; margin-top: 7px" />
 
 - **Noriszura Ismail** is a Professor and Head of Actuarial Science Program, Universiti Kebangsaan Malaysia (UKM). 
-
-
-***
-
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-
-<!-- **Miscellaneous** -->
-
-<!-- We retrieved the Challenge icon from [Nice png](https://www.nicepng.com/) under a Creative Commons license. -->
 
 
 
