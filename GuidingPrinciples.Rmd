@@ -21,7 +21,7 @@ Because of its focus on the foundations, we do not anticipate that this text wil
 
 ## II. Data, Data, Data {-}
 
-In contrast to traditional loss data models, we want to emphasize data demonstrations. In the new edition, we will compile a "data dictionary" that will provide a single source of different data sets. 
+In contrast to traditional loss models, we want to emphasize data demonstrations. In the new edition, we have a [Data Resources](https://openacttextdev.github.io/LDA_Ed2/appendix-data-resources.html) unit that provides a single source of different data sets. 
 
 *  So for the examples and exercises, try not to emphasize examples that were developed for multiple choice (for professional exams) questions.  
 *  Sometimes, small "toy" data sets, having just a few observations, can be useful to explain ideas. 
