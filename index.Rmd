@@ -41,7 +41,20 @@ The project goal is to have the actuarial community author our learning resource
 
 - **Zeinab Amin** is a Professor at the Department of Mathematics and Actuarial Science and Associate Provost for Assessment and Accreditation at the American University in Cairo (AUC).
 
+<br><br><br><br>
+
+-  **Hélène Cossette** is a  professor at the Université Laval. 
+
 <br><br><br>
+
+
+<img src = "ContributorPics\ErenDodd.jpg" width = "170" height = "160" style = "float:right; margin-left: 10px; margin-top: 7px" />
+
+
+-  **Erengul (Eren) Dodd** is  an associate professor of actuarial mathematics at the University of Southampton. 
+
+<br><br><br><br><br>
+
 
 <img src = "ContributorPics\MiukiEbisaki.jpg" width = "150" height = "180" style = "float:right; margin-left: 10px; margin-top: 7px" />
 
