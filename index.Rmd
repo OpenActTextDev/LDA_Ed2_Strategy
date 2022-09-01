@@ -51,7 +51,7 @@ The project goal is to have the actuarial community author our learning resource
 <img src = "ContributorPics\ErenDodd.jpg" width = "170" height = "160" style = "float:right; margin-left: 10px; margin-top: 7px" />
 
 
--  **Erengul (Eren) Dodd** is  an associate professor of actuarial mathematics at the University of Southampton. 
+-  **Erengul (Eren) Dodd** is a professor of actuarial mathematics at the University of Southampton. 
 
 <br><br><br><br><br>
 
