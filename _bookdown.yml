@@ -1,6 +1,6 @@
 book_filename: "LossDataAnalyticsEd2Strategy"
 output_dir: "docs"
-rmd_files: ["index.Rmd","GuidingPrinciples.Rmd"]            
+rmd_files: ["index.Rmd","GuidingPrinciples.Rmd", "GuideReviewers.Rmd"]            
 
            
 language:
