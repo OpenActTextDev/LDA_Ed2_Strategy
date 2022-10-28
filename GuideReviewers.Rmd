@@ -2,7 +2,7 @@
 # Guidelines for Reviewers {-#CGuideReviewers}
 
 
-The reviewer report allows you to offer constructive assistance and criticism to the author(s). Please be sensitive to the author(s) and convey your feedback in a positive way. Your comments should include a brief summary of what you think the author is trying to accomplish, a discussion of any flaws you feel the chapter(s) may contain, and detailed directions for recommended changes. The best reviewer reports are done in collaboration between senior (more experienced) and junior (closer to the textbooks’ intended readership) reviewers. Students in your classes also make great (supplement) reviewers - this is our intended audience.
+The reviewer report allows you to offer constructive assistance and criticism to the author(s). Please be sensitive to the author(s) and convey your feedback in a positive way. Your comments should include a brief summary of what you think the author is trying to accomplish, a discussion of any flaws you feel the chapter(s) may contain, and detailed directions for recommended changes. The best reviewer reports are done in collaboration between senior (more experienced) and junior (closer to the textbooks’ intended readership) reviewers. **Students in your classes also make great (supplement) reviewers - this is our intended audience.**
 
 A.  **Audience of the Reviewers Report.** The starting point of any writing project is deciding on the audience. For your report, there are really three audience members: (a) the editorial team; (b) the author(s); and (c) yourself, as a representative of the actuarial community.
 
